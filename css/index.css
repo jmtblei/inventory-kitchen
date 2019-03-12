@@ -1,0 +1,204 @@
+/* Reset
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Basic */
+
+body {
+	max-width: 1500px;
+  	width: 100%;
+ 	margin: 0 auto;
+	font-family: 'Georgia', italic;
+	line-height: 1.75rem;
+}
+
+@media (max-width: 500px) {
+	body {
+	width: 100%;
+ 	margin: 0 auto;
+	font-family: 'Georgia', italic;
+	}
+}
+
+h4 {
+	font-size: 1.5rem;
+	color: #1A701C;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: #E7DEAB;
+	position: fixed;
+	z-index: 1000000;
+  	width: 1500px; 
+}
+
+@media (max-width: 1300px) {
+	header {
+  	width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	header {
+  	width: 100%;
+	}
+}
+
+header a {
+	color: #1A701C;
+}
+
+nav a {
+	margin: 20px
+}
+
+/* Banner */
+
+.banner-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.banner-content h2 {
+	font-size: 2.5rem;
+	margin: 100px 0 20px;
+}
+
+.banner-content h4 {
+	text-align: center;
+}
+
+.banner-buttons button {
+	border-radius: 5px;
+	border:solid 1px #1A701C;
+	margin: 20px;
+	padding: 20px;
+	font-size: 1.5rem;
+	background-color: #E7DEAB;
+}
+.banner-buttons a {
+	color: #1A701C;
+	font-family: 'Georgia', italic;
+}
+
+.banner-buttons button:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+/* Carousel */
+
+.carousel {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	margin-top: 16px;
+}
+
+@media (max-width: 500px) {
+	.carousel {
+		display: none;
+	}
+}
+
+/* Content */
+
+.main-content {
+	display: flex;
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+	justify-content: center;
+}
+@media (max-width: 1300px) {
+	.main-content {
+		flex-direction: column;
+	}
+}
+@media (max-width: 500px) {
+	.main-content {
+		flex-direction: column;
+	}
+}
+.main-content p {
+	display: flex;
+  	flex-direction: column; 
+	align-items: center; 
+	padding: 10px;
+}
+
+.main-content p img {
+	margin-top: 20px;
+}
+
+/* Footer */
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: #E7DEAB;
+}
