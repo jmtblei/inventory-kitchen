@@ -1,0 +1,37 @@
+/*Dropdown */
+.dropdown {
+  z-index: 2;
+  position: relative;
+
+  .dropdownbutton {
+    color: #1a701c;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .dropdowncontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    background-color: #e7deab;
+    border: solid 1px #1a701c;
+  }
+
+  .dropdownlink {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #1a701c;
+    &:hover {
+      color: #1a701c;
+      background-color: white;
+    }
+  }
+
+  .dropdownhidden {
+    display: none;
+  }
+}

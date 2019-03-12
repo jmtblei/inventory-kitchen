@@ -1,28 +1,30 @@
+/* Header */
 header {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	padding: 20px 0;
-	background-color: @peach;
-    position: fixed;
-    z-index: 1000000;
-    width: 1500px;
-
+	background-color: #E7DEAB;
+	position: fixed;
+	z-index: 1000000;
+  	width: 1500px; 
+      
     @media (max-width: 1300px) {
-        header {
-          width: 100%;
-        }
-    }
-    
+        width: 100%;
+    }      
     @media (max-width: 500px) {
-        header {
-          width: 100%;
-        }
+        width: 100%;
     }
-    
-    a {
-        color: @forest;
-    }
+        
     nav {
-        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            padding: 10px;
+            color: #1A701C;
+        }
     }
 }
+        
+        
