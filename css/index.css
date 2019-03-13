@@ -23,8 +23,10 @@ header nav {
   justify-content: center;
   align-items: center;
 }
-header nav a {
+header nav .fas {
   padding: 10px;
+}
+header nav a {
   color: #1A701C;
 }
 /*Dropdown */
@@ -52,6 +54,7 @@ header nav a {
   text-align: center;
   text-decoration: none;
   color: #1a701c;
+  padding: 5px;
 }
 .dropdown .dropdownlink:hover {
   color: #1a701c;
@@ -154,13 +157,11 @@ header nav a {
 }
 .box-container .boxes .detail {
   display: flex;
-  text-align: center;
+  justify-content: space-between;
+  padding: 10px 10px 0;
 }
 .box-container .boxes .detail img {
   width: 50px;
-}
-.box-container .boxes .detail p {
-  padding: 10px 0 0 10px;
 }
 /* Reset
 
