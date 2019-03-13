@@ -135,6 +135,33 @@ header nav a {
 .main-content p img {
   margin-top: 20px;
 }
+/* Boxes */
+.box-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.box-container .boxes {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1A701C;
+  background-color: #FDF5E2;
+  padding: 20px;
+  margin: 60px 10px 0;
+  width: 400px;
+}
+.box-container .boxes .detail {
+  display: flex;
+  text-align: center;
+}
+.box-container .boxes .detail img {
+  width: 50px;
+}
+.box-container .boxes .detail p {
+  padding: 10px 0 0 10px;
+}
 /* Reset
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

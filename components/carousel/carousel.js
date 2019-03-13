@@ -11,24 +11,5 @@ function carousel() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  setTimeout(carousel, 2000); // Change image every 2000ms seconds
 }
-
-// Dropdown
-class Dropdown {
-  constructor(element) {
-    this.element = element;
-    this.button = this.element.querySelector('.dropdownbutton');
-    this.content = this.element.querySelector('.dropdowncontent');
-    this.button.addEventListener('click', () => { 
-      this.toggleContent();
-    });
-  }
-  toggleContent() {
-    this.content.classList.toggle('dropdownhidden');
-  }
-}
-
-let dropdowns = document.querySelectorAll('.dropdown');
-
-dropdowns.forEach( dropdown => new Dropdown(dropdown));
