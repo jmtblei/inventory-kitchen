@@ -129,6 +129,12 @@ header nav a {
     flex-direction: column;
   }
 }
+.main-content h4 {
+  border: 1px solid #1A701C;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: #E7DEAB;
+}
 .main-content p {
   display: flex;
   flex-direction: column;
@@ -162,6 +168,9 @@ header nav a {
 }
 .box-container .boxes .detail img {
   width: 50px;
+}
+.box-container .boxes .detail p {
+  font-size: 85%;
 }
 /* Reset
 
